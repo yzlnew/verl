@@ -2,7 +2,7 @@ set -x
 
 # 0. download the model
 # only need to download the configuration_deepseek.py and config.json
-huggingface-cli download moonshotai/DeepSeek-V3-0324 configuration_deepseek.py config.json
+huggingface-cli download deepseek-ai/DeepSeek-V3-0324 configuration_deepseek.py config.json
 
 # 1. download the dist_ckpt format model from https://huggingface.co/BearBiscuit05/dpsk-v3-671B-BF16-dist_ckpt/tree/main
 # change the HF_MODEL_PATH and DIST_CKPT_PATH to your own path
