@@ -95,5 +95,4 @@ python3 -m verl.trainer.main_ppo --config-path=./config --config-name='ppo_megat
     trainer.default_hdfs_dir=null \
     trainer.default_local_dir=$CKPT_DIR \
     trainer.val_before_train=False \
-    trainer.val_before_train=False \
     trainer.total_epochs=100 $@
