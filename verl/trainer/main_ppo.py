@@ -22,10 +22,6 @@ import ray
 from verl.trainer.ppo.ray_trainer import RayPPOTrainer
 from verl.trainer.ppo.reward import load_reward_manager
 
-# fix for DeepSeek-V3 using vLLM backend
-import torch._dynamo
-torch._dynamo.config.suppress_errors = True
-
 
 @hydra.main(config_path="config", config_name="ppo_trainer", version_base=None)
 def main(config):
